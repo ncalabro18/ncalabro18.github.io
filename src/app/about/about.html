@@ -1,0 +1,74 @@
+<!--
+I used some AI to make this document, mostly for spellchecking
+-->
+<b>Nicholas J. Calabro</b>
+<br>Hanover, MA
+<br>
+Highly motivated Software Engineer seeking full-time employment this May.
+Internship experience included a program continuously transferring data from Elasticsearch to Postgres and an Angular web application used to parse invoice PDFs.
+I implemented CI pipelines and extensive tests for both projects.
+I have an in-depth understanding of developing on the Linux platform through coursework.
+More details are below.
+
+
+<h3>Education</h3>
+<br>Bachelor of Science in Computer Science
+<br>University of Massachusetts Lowell
+<br>May 2026
+
+
+<h4>Project Courses</h4>
+
+
+
+<h5>Introduction to Linux Development</h5>
+
+Developed a Linux Filesystem, Shell, Block Device, and Character Device cross compiling to target RISC-V. Programmed in Linux kernel space and managed internal kernel resources. Used gdb to debug GNU C over a socket. Curriculum designed by Red Hat.
+
+<br><a href="https://www.uml.edu/catalog/courses/comp/3085">UMass Lowell's Course Page</a>
+<br><a href="https://kdlp.underground.software/">Red Hat's Course Page</a>
+
+<br><br>
+<h5>Database I</h5>
+
+Designed a medical database with doctors, patients, visits, appointments, and bills. Created SQL queries to interact with the database and calculate mock hospital metrics.
+
+<br><a href="https://www.uml.edu/catalog/courses/COMP/5730">UMass Lowell's Course Page</a>
+
+
+<br><br><h3>Experience</h3>
+
+
+<h4>Cogo Labs</h4>
+
+Go Software Engineer Intern
+<br>May 2020 to August 2020
+<br>One Kendall Square, Suite B2102, Cambridge, MA 02139
+
+
+<ul>
+<li>Designed, implemented, deployed, and monitored two projects written in Go and TypeScript, each running in production Kubernetes containers deployed through Travis CI.</li>
+<li>Developed both projects using Git while working with and learning from a team.</li>
+<li>Planned and managed project progression using GitHub Issues to facilitate communication.</li>
+<li>Requested and analyzed code reviews from other engineers, resulting in new improvements.</li>
+<li>Implemented comprehensive Go test suites with broad code coverage, improving code quality.</li>
+</ul>
+<br><h5>Project: DMARC Reporter</h5>
+Go | Postgres | Docker | Kubernetes | Prometheus | Sysdig | Git
+<ul>
+<li>Protected key revenue streams by implementing a DMARC reporter to ensure email deliverability.</li>
+<li>Queried an Elasticsearch engine for thousands of daily DMARC report emails from providers.</li>
+<li>Parsed the reports, encoded in zipped Base64 into raw XML, then inserted the XML report data into a Postgres database table, providing a PostgreSQL interface for company engineers.</li>
+<li>Created a robust monitoring service with Prometheus and Sysdig to graph email failure rates, system status, and performance.</li>
+<li>In the event of significant send failures, these interfaces will eliminate or flag DMARC, either DKIM or SPF, as point of failure reducing response times and lost revenue.</li>
+</ul>
+<br><h5>Project: Invoice Scraper</h5>
+Go | TypeScript | Angular | Docker | Kubernetes | Git
+<ul>
+<li>Parsed submitted payments from invoice PDFs for leased IP addresses, automating a previously manual sysadmin task.</li>
+<li>Developed an Angular web application to submit invoices and to display the parsed results.</li>
+<li>Engineered a YAML-based configuration system for the invoice scraper backend, which facilitated the parsing of invoices from at least five different providers with varying syntax.</li>
+<li>Prepared intuitive Markdown documentation about creating or changing configurations to minimize labor time if the invoice syntax changed or a new IP provider required parsing.</li>
+<li>Incorporated optional output to display how the parser executes to indicate configuration errors, decreasing required manual time to configure the parser.</li>
+</ul>
+
