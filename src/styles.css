@@ -1,4 +1,4 @@
-/* I used AI for this file */
+/* I used AI for most of this file */
 /* =========================
    Global Reset & Base
 ========================= */
@@ -9,6 +9,14 @@ a {
     text-decoration: none;
     font-size: 0.95rem;
     transition: color 0.2s ease;
+}
+
+p {
+    margin-left: 35px;
+}
+
+ul {
+    margin-left: 35px;
 }
 
 a:hover {
@@ -64,6 +72,7 @@ h3 {
 
 h4 {
     font-size: 1.1rem;
+    margin-left: 15px;
     margin-top: 20px;
     margin-bottom: 10px;
     color: #94a3b8;
