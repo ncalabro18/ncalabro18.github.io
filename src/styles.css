@@ -1,7 +1,72 @@
-/* I used AI for most of this file */
-/* =========================
+/* I used AI for most of this file
+
+
    Global Reset & Base
-========================= */
+*/
+abbr {
+    position: relative;
+    color: #cbd5e1;
+    text-decoration: none;
+    border-bottom: 1px dotted #475569;
+    cursor: help;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+abbr:hover {
+    color: #38bdf8;
+    border-color: #38bdf8;
+}
+
+abbr::after {
+    content: attr(data-tip);
+
+    position: absolute;
+    left: 0;
+    bottom: 125%;
+
+    background-color: #1e293b;
+    color: #e2e8f0;
+
+    padding: 8px 12px;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    min-width: 210px;
+    max-width: 420px;
+    width: max-content;
+
+    border: 1px solid #334155;
+    border-radius: 6px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity 0.15s ease, transform 0.15s ease;
+
+    pointer-events: none;
+    white-space: normal;
+    z-index: 1000;
+}
+
+abbr::before {
+    position: absolute;
+    left: 14px;
+    bottom: 118%;
+
+    border-width: 6px;
+    border-style: solid;
+    border-color: #1e293b transparent transparent transparent;
+
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+abbr:hover::after,
+abbr:hover::before {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
 a {

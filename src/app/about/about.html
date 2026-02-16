@@ -86,10 +86,23 @@ I used some AI to make some changes to this document, mostly for spellchecking
 <p>&nbsp; Go | Postgres | Docker | Kubernetes | Prometheus | Sysdig | Git</p>
 <ul>
 <li>Protected key revenue streams by implementing a DMARC reporter to ensure email deliverability.</li>
-<li>Queried an Elasticsearch engine for thousands of daily DMARC report emails from providers.</li>
+<li>Queried an Elasticsearch engine for thousands of daily 
+<abbr data-tip="Domain-based Message Authentication Reporting and Conformance - determines if emails will be delivered based on DKIM and SPF results">
+	DMARC
+</abbr>
+
+report emails from providers.</li>
 <li>Parsed the reports, encoded in zipped Base64 into raw XML, then inserted the XML report data into a Postgres database table, providing a PostgreSQL interface for company engineers.</li>
 <li>Created a robust monitoring service with Prometheus and Sysdig to graph email failure rates, system status, and performance.</li>
-<li>In the event of significant send failures, these interfaces will eliminate or flag DMARC, either DKIM or SPF, as point of failure reducing response times and lost revenue.</li>
+<li>In the event of significant send failures, these interfaces will eliminate or flag 
+<abbr data-tip="DomainKeys Identified Mail - DNS record storing a public key for data integrity">
+	DKIM
+</abbr>
+or
+<abbr data-tip="Sender Policy Framework - list of valid IP addresses that a domain may send emails from">
+	SPF
+</abbr>
+, as point of failure reducing response times and lost revenue.</li>
 </ul>
 <br><h5>Cogo Labs Project: Invoice Scraper</h5>
 <p>&nbsp; Go | TypeScript | Angular | Docker | Kubernetes | Git</p>
