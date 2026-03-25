@@ -28,10 +28,10 @@ describe('About', () => {
     expect(compiled.querySelector('h1')?.textContent).toContain('Nicholas J. Calabro');
   });
 
-  it('should render h2', async () => {
+  it('should render h3', async () => {
     const fixture = TestBed.createComponent(AboutPage);
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h3')?.textContent).toContain('University of Massachusetts, Lowell');
+    expect(compiled.querySelector('h3')?.textContent).toContain('Overview');
   });
 });
