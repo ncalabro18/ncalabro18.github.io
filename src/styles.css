@@ -4,6 +4,50 @@
    Global Reset & Base
 */
 
+
+
+details {
+  margin-bottom: 1rem;
+}
+
+details summary {
+  cursor: pointer;
+  list-style: none; /* removes default arrow if you want custom styling */
+}
+
+details summary {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 9px;
+  display: flex;
+}
+
+details summary h5 {
+  margin: 0;
+}
+
+details[open] summary {
+  margin-bottom: 0.5rem;
+}
+
+
+details summary::before {
+  content: "▶";
+  font-size: 0.8rem;
+  margin-right: 8px;
+  transition: transform 0.2s ease;
+}
+
+details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+details summary:hover {
+  background: #1e293b;
+}
+
+
 .meta {
   padding-left: 0.75rem;   /* replaces &nbsp; indent */
   border-left: 3px solid #475569;
@@ -152,6 +196,22 @@ h4 {
     color: #94a3b8;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+h5 {
+}
+
+h6 {
+}
+
+h5 {
+    font-size: 0.91rem;
+    color: #cbd5e1; /* lighter slate */
+}
+
+h6 {
+    font-size: 0.91rem;
+    color: #64748b; /* muted slate */
 }
 
 h5, h6 {
