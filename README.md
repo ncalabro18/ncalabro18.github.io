@@ -1,6 +1,6 @@
 # Portfolio
 
-Portfolio website
+An HTML version of my resume including details about my recent computer science courses completed at UMass Lowell.
 
 [View it here](https://ncalabro.net)
 
