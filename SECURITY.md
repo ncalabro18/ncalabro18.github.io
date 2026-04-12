@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-Use the latest branch on main.
+Use the latest branch on deploy.
 
 ## Reporting a Vulnerability
 
