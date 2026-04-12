@@ -2,7 +2,7 @@ name: Portfolio Auto Deploy
 on:
   push:
     branches:
-      - main
+      - deploy
 permissions:
   contents: read
   pages: write
